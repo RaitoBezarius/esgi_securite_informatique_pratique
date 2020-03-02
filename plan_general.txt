@@ -3,11 +3,15 @@
         - [x] Présentation de Python: pourquoi ce langage? industrie, etc.
         - [x] Présentation du cours: objectifs, plan
         - [x] Première notion capitale: modèle de menace & surface d'attaque
-- [ ] Rappels de Python (3h)
-        - [ ] Objets de base: expression vs fonctions vs ???, tout est un objet
-        - [ ] Orienté objet: classes, techniques de réflections
-        - [ ] Librarie standard: collections (compteurs, defaultdict, deque), ctypes
-        - [ ] Libraries externes: Scapy, pwnlib, dpkt, impacket, Unicorn Engine.
+- [x] Bases de Python (3h)
+        - [x] Objets de base: expression vs fonctions vs ???, tout est un objet
+        - [x] Orienté objet: classes, techniques de réflections
+        - [x] Librarie standard: collections (compteurs, defaultdict, deque), ctypes
+        - [x] Libraries externes: Scapy, pwnlib, dpkt, impacket, Unicorn Engine.
+- [ ] Exercices de Python à chaque cours (30 mn — 1 heure)
+        - [ ] Questions des étudiants
+        - [ ] Un ou deux exercices de pratique
+        - [ ] Des points techniques & méthodologique
 - [ ] Red teamer (2h)
         - [ ] Attaquer une organisation: pénétrer le réseau interne, voler des choses, exfiltration
         - [ ] Scapy: ARP poisoning, DHCP poisoning
@@ -20,7 +24,7 @@
         - [ ] Attaquer une organisation, le retour: faire du social engineering « malin »
         - [ ] HTTPS/HSTS/2FA & déposer des fichiers dans les dossiers montés
         - [ ] Rogue AP.
-        - [ ] Exemple jouet: Modlishka + Rogue AP.
+        - [ ] Exemple jouet: Modlishka + Rogue AP (bypasser le 2FA).
 - [ ] Blue teamer (2h)
         - [ ] Défendre tout court: l'émulation, les antivirus, les EDR (endpoint detection & response)
         - [ ] Yara/Snort, détection de signatures
