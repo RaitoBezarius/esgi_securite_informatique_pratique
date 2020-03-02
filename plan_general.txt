@@ -1,0 +1,36 @@
+- [x] Introduction à la sécurité informatique appliquée avec Python (30mn)
+        - [x] Présentation des enjeux de l'infosec: stats, parcours, recherche, industrie
+        - [x] Présentation de Python: pourquoi ce langage? industrie, etc.
+        - [x] Présentation du cours: objectifs, plan
+        - [x] Première notion capitale: modèle de menace & surface d'attaque
+- [ ] Rappels de Python (3h)
+        - [ ] Objets de base: expression vs fonctions vs ???, tout est un objet
+        - [ ] Orienté objet: classes, techniques de réflections
+        - [ ] Librarie standard: collections (compteurs, defaultdict, deque), ctypes
+        - [ ] Libraries externes: Scapy, pwnlib, dpkt, impacket, Unicorn Engine.
+- [ ] Red teamer (2h)
+        - [ ] Attaquer une organisation: pénétrer le réseau interne, voler des choses, exfiltration
+        - [ ] Scapy: ARP poisoning, DHCP poisoning
+        - [ ] Usage de faille: Heartbleed, OpenSMTPd
+        - [ ] Exemple jouet: ARP poisoning, DHCP poisoning, exploiter une machine vulnérable
+- [ ] Blue teamer (2h)
+        - [ ] Défendre une organisation: IDS/IPS, pare-feu
+        - [ ] Exemple jouet: détecter un ARP poisoning, un DHCP poisoning, faire du DPI
+- [ ] Red teamer (2h)
+        - [ ] Attaquer une organisation, le retour: faire du social engineering « malin »
+        - [ ] HTTPS/HSTS/2FA & déposer des fichiers dans les dossiers montés
+        - [ ] Rogue AP.
+        - [ ] Exemple jouet: Modlishka + Rogue AP.
+- [ ] Blue teamer (2h)
+        - [ ] Défendre tout court: l'émulation, les antivirus, les EDR (endpoint detection & response)
+        - [ ] Yara/Snort, détection de signatures
+        - [ ] Émulateurs d'architecture: Unicorn Engine
+        - [ ] Disgression: analyse statique & sécurité
+        - [ ] Exemple jouet: détecter le dépôt d'un shellcode x86 sur un serveur Samba.
+- [ ] Red teamer (2h)
+        - [ ] Attaquer une organisation: malware & persistence
+        - [ ] ctypes/Win32 API
+        - [ ] Exfiltration & protocoles: stéganographie, protocole « anti censure » (obfsproxy), VPNs, etc.
+        - [ ] Exemple jouet: Keylogger bidon en Python, exfiltration par protocole « anti censure »
+- [ ] Conclusion (2 h)
+        - [ ]
