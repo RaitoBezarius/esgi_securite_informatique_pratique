@@ -13,6 +13,14 @@ N'hésitez pas à me demander par email ou ouvrir une issue pour poser des quest
 
 Si vous voulez contribuer à ce référentiel, cela sera avec plaisir :).
 
+# News du monde de la sécurité informatique / Veille active
+
+- 2020-03: <https://peterwang512.github.io/CNNDetection/> — détecter des images générés par réseaux de neurones (application à l'anti-deep fakes)
+- 2020-03-02: <https://neutrinet.be/fr/blog/collabo>
+- 2020-03-02: <https://www.wired.com/story/wireguard-gives-linux-faster-secure-vpn/> (à propos des VPNs)
+- 2020-02-28: <https://arxiv.org/abs/2002.12506> — analyse forensics de la télémétrie de Windows pour les diagnostics
+- 2020-02-29: <https://mattslifebytes.com/2020/02/29/remote-access-to-production-infrastructure-death-to-the-vpn> — morts aux VPNs (des idées pertinentes, à confronter à la simplicité suprême de WireGuard et sa sécurité).
+
 ## Apprendre un peu de Python pratique
 
 Tout d'abord, le tutoriel Python 3.8 est une très bonne référence: <https://docs.python.org/fr/3/tutorial/>
