@@ -7,10 +7,15 @@ def executer_intcode(prg):
         if opcode not in (1, 2, 99):
             raise ValueError("Opcode invalide détecté, exécution impossible ou programme corrompu!")
 
+        if opcode == 99:
+            break
+
         if opcode == 1:
             prg[out] = prg[p1] + prg[p2]
         elif opcode == 2:
             prg[out] = prg[p1] * prg[p2]
         else: # on sait que opcode == 99 d'après la ligne 7.
-            break
+            raise RuntimeError('État inattendu!')
+
+        i += 4
     return prg[0]
