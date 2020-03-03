@@ -13,6 +13,10 @@ N'hésitez pas à me demander par email ou ouvrir une issue pour poser des quest
 
 Si vous voulez contribuer à ce référentiel, cela sera avec plaisir :).
 
+# Machines virtuelles
+
+La « Machine trouée »: <https://www.vulnhub.com/entry/bwapp-bee-box-v16,53/> — configurez la avec un réseau bridgé et un host-only pour pouvoir faire des choses avec tranquillement. Si vous avez du mal, pingez moi !
+
 # News du monde de la sécurité informatique / Veille active
 
 - 2020-03: <https://peterwang512.github.io/CNNDetection/> — détecter des images générés par réseaux de neurones (application à l'anti-deep fakes)
