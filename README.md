@@ -13,12 +13,41 @@ N'hésitez pas à me demander par email ou ouvrir une issue pour poser des quest
 
 Si vous voulez contribuer à ce référentiel, cela sera avec plaisir :).
 
+# Idées de projets (annuels peut-être?)
+
+## DevSecOps (tmtc Quentin)
+
+- Contribuer à <https://github.com/aquasecurity/kube-hunter> c'est un tournant intéressant, c'est un petit outil Python simple à comprendre, qui a énormément de potentiel ;
+
+## Honeypots
+
+- Fabriquer un honeypot Docker: faire croire qu'on est un serveur Docker et attraper les réponses et faire croire que l'ennemi a un shell, vous pouvez vous inspirer de: <https://github.com/lnslbrty/potd>
+- Techniques anti-honeypot: comment trouver des facteurs / invariants qu'on ne peut trouver que des vraies machines ? (tester le timing de certains opérations CPU, des instructions spéciales ? AVX, etc.)
+- Détecter <frida.re> et empêcher sa détection
+- Honeypot pour PostgreSQL
+
+## Fuzzing
+
+- Faire un fuzzer du protocole IMAP/POP3 ou fuzzer le protocole avec un truc comme AFL, honggfuzz, Peach Fuzzer, etc.
+
+## OSINT
+
+- Un bot qui cherche des informations sur nous et nous alerte sur des leak potentiels de notre vie privée (cherchez sur Twitter pour des mots clefs personnels, scrapper Google, utiliser theHarvester mais dans l'autre sens)
+
+## Réseau
+
+- Fabriquer un outil pour déployer un VPN avec redirection de traffic vers un bridge qui fait tourner un `tcpdump` pour stocker les trames (à utiliser avec `mitmproxy` et WireGuard) automatiquement.
+- Module Python pour pouvoir lancer plusieurs requêtes parallèles avec plusieurs circuits Tor (pensez `multitor` dans Python automatisé).
+- Module Python pour ne communiquer qu'en IPv6 (pensez évasion d'IDS/IPS débiles)
+
 # Machines virtuelles
 
 La « Machine trouée »: <https://www.vulnhub.com/entry/bwapp-bee-box-v16,53/> — configurez la avec un réseau bridgé et un host-only pour pouvoir faire des choses avec tranquillement. Si vous avez du mal, pingez moi !
 
 # News du monde de la sécurité informatique / Veille active
 
+- Comment générer des nombres aléatoires correctement: <https://sockpuppet.org/blog/2014/02/25/safely-generate-random-numbers/> ?
+- Comment se défendre contre les attaques de replay (c.f. le monsieur avec une trottinette modifiée): <http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.69.1965&rep=rep1&type=pdf>
 - 2020-03: <https://peterwang512.github.io/CNNDetection/> — détecter des images générés par réseaux de neurones (application à l'anti-deep fakes)
 - 2020-03-02: <https://neutrinet.be/fr/blog/collabo>
 - 2020-03-02: <https://www.wired.com/story/wireguard-gives-linux-faster-secure-vpn/> (à propos des VPNs)
