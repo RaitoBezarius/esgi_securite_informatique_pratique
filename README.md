@@ -57,3 +57,48 @@ Si vous voulez faire les malins, rien ne vous empêcher d'interférer avec l'att
 ## Préparez vos exploits Heartbleed!
 
 Demain, on va tester Heartbleed, si vous ne voulez pas voir et vous voulez tester, allez googler un PoC pour demain !
+
+# Cours du mercredi
+
+## Quelques exercices de Python (à nouveau)
+
+À ceux qui se sentent balèzes, je vous invite à tenter <https://adventofcode.com/> l'exercice 1 puis l'exercice 2.
+
+On essayera de corriger l'exercice 2 entièrement demain (pour la promo où on a fait la première partie de l'exo 2, je vous invite à faire l'exo 1 entièrement et à tenter de faire la 2nde partie de l'exo 2).
+
+Pour du PracticePython, prenez ceux que vous n'avez pas fait encore:
+
+- Exercice 11
+- Exercice 20
+- Exercice 17
+- Exercice 19
+- Exercice 16 (attention, générer un mot de passe sécurisé & aléatoire ce n'est pas trivial! Cherchez la notion d'entropie d'un mot de passe et calculez la!)
+
+
+Vous retrouverez les corrections des exercices qu'on a fait dans le repo, de choses qu'on a abordé, un lien vers la VM « Machine trouée », ce qu'on a utilisé pour Heartbleed et le code de ARP spoofing.
+
+## Un peu de cours technique sur l'attaque & la défense — surfaces d'attaque
+
+On présentera des situations types:
+
+- serveurs SSH ;
+- conteneurs Docker ;
+- exfiltration par Tor
+
+Par exemple, mais pas que.
+
+## Comment détecter un ARP spoofing en cours?
+
+On va utiliser Scapy pour sniffer les paquets et voir plusieurs contre mesures:
+
+- défense avec cache statique ;
+- défense par **statistique** (nombre d'ARP sur un temps donné)
+
+## Outils de DPI: `nfstream`
+
+On va essayer d'analyser du traffic réseau pour détecter ce qui se passe et faire des statistiques.
+
+Vous pouvez réfléchir à des idées de trucs qu'on pourrait analyser:
+
+- les paquets réseaux qui cherchent des Chromecast/appareils AirPlay ;
+- les méta-informations qu'on pourrait miner sur les appareils d'un réseau

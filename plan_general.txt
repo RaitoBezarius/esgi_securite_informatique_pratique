@@ -12,12 +12,12 @@
         - [ ] Questions des étudiants
         - [ ] Un ou deux exercices de pratique
         - [ ] Des points techniques & méthodologique
-- [ ] Red teamer (2h)
+- [x] Red teamer (2h)
+        - [x] Scapy: ARP poisoning, DHCP poisoning
+        - [x] Usage de faille: Heartbleed, OpenSMTPd
+        - [x] Exemple jouet: ARP poisoning, DHCP poisoning, exploiter une machine vulnérable
+- [ ] Red/Blue teamer (2h)
         - [ ] Attaquer une organisation: pénétrer le réseau interne, voler des choses, exfiltration
-        - [ ] Scapy: ARP poisoning, DHCP poisoning
-        - [ ] Usage de faille: Heartbleed, OpenSMTPd
-        - [ ] Exemple jouet: ARP poisoning, DHCP poisoning, exploiter une machine vulnérable
-- [ ] Blue teamer (2h)
         - [ ] Défendre une organisation: IDS/IPS, pare-feu
         - [ ] Exemple jouet: détecter un ARP poisoning, un DHCP poisoning, faire du DPI
 - [ ] Red teamer (2h)
