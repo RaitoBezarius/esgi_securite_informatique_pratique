@@ -46,6 +46,7 @@ La « Machine trouée »: <https://www.vulnhub.com/entry/bwapp-bee-box-v16,53/> 
 
 # News du monde de la sécurité informatique / Veille active
 
+- Scraper sa banque: <https://weboob.org/applications/boobank>
 - Dédicace au garçon qui a trop d'ESP32 chez lui: <https://www.thirtythreeforty.net/posts/2019/12/my-business-card-runs-linux/>
 - Comment générer des nombres aléatoires correctement: <https://sockpuppet.org/blog/2014/02/25/safely-generate-random-numbers/> ?
 - Comment se défendre contre les attaques de replay (c.f. le monsieur avec une trottinette modifiée): <http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.69.1965&rep=rep1&type=pdf>
