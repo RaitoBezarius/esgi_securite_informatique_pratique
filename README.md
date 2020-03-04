@@ -46,6 +46,7 @@ La « Machine trouée »: <https://www.vulnhub.com/entry/bwapp-bee-box-v16,53/> 
 
 # News du monde de la sécurité informatique / Veille active
 
+- Dédicace au garçon qui a trop d'ESP32 chez lui: <https://www.thirtythreeforty.net/posts/2019/12/my-business-card-runs-linux/>
 - Comment générer des nombres aléatoires correctement: <https://sockpuppet.org/blog/2014/02/25/safely-generate-random-numbers/> ?
 - Comment se défendre contre les attaques de replay (c.f. le monsieur avec une trottinette modifiée): <http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.69.1965&rep=rep1&type=pdf>
 - 2020-03: <https://peterwang512.github.io/CNNDetection/> — détecter des images générés par réseaux de neurones (application à l'anti-deep fakes)
@@ -135,3 +136,63 @@ Vous pouvez réfléchir à des idées de trucs qu'on pourrait analyser:
 
 - les paquets réseaux qui cherchent des Chromecast/appareils AirPlay ;
 - les méta-informations qu'on pourrait miner sur les appareils d'un réseau
+
+# Cours du jeudi
+
+## Quelques exercices de Python (mais cette fois ci, on passe à du sérieux)
+
+À ceux qui ont trop de temps libre:
+
+- Tenter <https://projecteuler.net/archives> (les 5 premiers sont sympa, le reste est assez mathématiques)
+- Allez mater <https://www.data.gouv.fr/> et trouvez des trucs à faire en Python avec les données
+- Mesurez vous sur des compétitions de machine learning (et apprenez le machine learning appliqué): <https://www.kaggle.com/>
+
+### Recette pour la promo du matin
+
+On continue sur PracticePython, ceux que vous n'avez pas fait parmi ceux là :
+
+- Exercice 17
+- Exercice 19, qu'on ne corrigera pas en cours, il est le même que le 17
+- Exercice 16
+
+Ensuite, on passera sur Advent of Code, le jour 2 de <http://adventofcode.com/>
+
+Puis, si on a assez de temps, on va essayer d'écrire un outil d'archivage de news (avec la librairie `newspaper` sans se casser la tête trop et on fera de l'analyse textuelle avec https://textblob.readthedocs.io/en/dev/quickstart.html#sentiment-analysis).
+
+Ou alors, si on a vraiment beaucoup de temps, on écrira une timing attack contre les serveurs qui ne font pas de comparaisons sécurisées (!).
+
+### Recette pour la promo de l'après midi
+
+Pour commencer, on va utiliser l'API de Shodan, allez chopper une clef aussitôt que possible: <https://github.com/achillean/shodan-python>
+
+- Essayez de reproduire les exemples vus en cours relatifs à Shodan ;
+- Trouvez des idées intéressantes de requêtes ;
+- Faites des statistiques (partielles hélas) de vulnérabilitiés
+
+Ensuite, récupèrez une clef d'API Twitter sur <https://developer.twitter.com/>, faites vous un compte Twitter bidon / poubelle.
+
+On va fabriquer un bot qui RT les hashtags de concours de RTs :-) avec <https://www.tweepy.org/> par exemple.
+
+Si vous avez trop de temps libre, on va faire un algorithme de trading automatisé où on backtestera l'algorithme sur des données de finances, si vous voulez préparer le terrain: <https://www.backtrader.com/home/helloalgotrading/>
+
+Mais ça sera un TP où on va discuter autour de la crypto, et notamment la sécurité des blockchains, etc.
+
+## Phishing moderne & Modlishka: présentation & démonstration
+
+J'espère que vos comptes bidons sont prêts, on va faire du phishing à faible coût et massivement réutilisable.
+
+## Émuler du code de n'importe quelle architecture — Unicorn Engine (depuis Python)
+
+On va jeter un coup d'œil à une version simplifié de cet exemple: <https://github.com/unicorn-engine/unicorn/blob/master/bindings/python/sample_x86.py>
+
+Et on va voir ce qu'on peut faire pour modifier les choses.
+
+## Détecter du shellcode avec Unicorn Engine
+
+On va utiliser ce qu'on a vu juste avant afin de détecter du shellcode, à coupler avec `Scapy` ou `NFStream` pour sniffer et détecter du shellcode sur le réseau.
+
+## Présentation de YARA: https://virustotal.github.io/yara/
+
+## Comment on dissecte du malware? Émulation? Virtualisation? Reverse engineering?
+
+On va voir sur un vrai malware quelques réflexes de ce qu'il faut faire et ce qu'il ne faut pas faire.
