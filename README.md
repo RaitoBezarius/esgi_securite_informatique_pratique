@@ -13,6 +13,17 @@ N'hésitez pas à me demander par email ou ouvrir une issue pour poser des quest
 
 Si vous voulez contribuer à ce référentiel, cela sera avec plaisir :).
 
+# Éléments de références bibliographiques pour aller plus loin
+
+- https://github.com/topics/security
+- https://github.com/xairy/linux-kernel-exploitation pour le noyau Linux
+- https://github.com/trimstray/the-book-of-secret-knowledge pour une liste assez complète de tout ce qui traîne
+- https://www.humblebundle.com/books/cybersecurity-2020-wiley-books des tas de bouquins de sécurité pas cher
+- https://www.amazon.com/Windows-Internals-Part-Developer-Reference/dp/0735648735/ pour les internals de Windows
+- https://www.alchemistowl.org/pocorgtfo/ - PoC||GTFO, une e-zine de sécurité assez bien foutue
+- https://ired.team/ — pour aller plus loin en tant que red teamer, quelques protips
+- https://docs.google.com/spreadsheets/d/1b4mUxa6cDQuTV2BPC6aA-GR4zGZi0ooPYtBe4IgPsSc/edit#gid=0 — la C2 Matrix
+
 # Idées de projets (annuels peut-être?)
 
 ## DevSecOps (tmtc Quentin)
@@ -35,6 +46,10 @@ Si vous voulez contribuer à ce référentiel, cela sera avec plaisir :).
 - Fuzzer le protocole de Discord (surtout côté appels) à la recherche de bug ou de 0days :-).
 - Fuzzer CS:GO pour trouver des 0days: oui, y a des gens qui font ça https://blog.firosolutions.com/exploits/counter-strike-go/ (remplacez CS:GO par votre jeu préféré et ça marche aussi.)
 
+## Reverse engineering
+
+- Prendre une appliance type VPN (FortiNet, Citrix, Pulse Secure) sous forme de VM et mettre à plat son fonctionnement entièrement (attention, ça requiert des bonnes compétences en système, rien que parce que les appliances sont protégés et vont vous demander de pwner le full disk encryption en choppant la RAM de la VM ou en étant plus créatif)
+
 ## OSINT
 
 - Un bot qui cherche des informations sur nous et nous alerte sur des leak potentiels de notre vie privée (cherchez sur Twitter pour des mots clefs personnels, scrapper Google, utiliser theHarvester mais dans l'autre sens)
@@ -49,6 +64,12 @@ Si vous voulez contribuer à ce référentiel, cela sera avec plaisir :).
 - Utiliser eBPF pour faire de la sécurité avancée dans un contexte Kubernetes/Docker: https://github.com/cilium/cilium
 - Utiliser https://github.com/swisskyrepo/PayloadsAllTheThings pour écrire un testeur de quelque chose (XSS, OAuth, SAML, race conditions, etc.)
 - Écrire un testeur de timing attacks avancé
+- Analyser le protocole 4G et chercher des vulnérabilités!
+
+## Cryptomonnaie
+
+- Analyse de transactions et retraçage de l'origine d'une transaction
+- Analyse de blanchiement de sous-sous
 
 ## Dissection
 
@@ -259,7 +280,9 @@ On passe 30 minutes à regarder ce que vous avez essayé de faire en Python ; et
 
 ## Protocoles anti-censure/anti-DPI (notamment `obfsproxy`) & Command'n'Control modernes
 
-À venir.
+On parlera de C2, ce qu'on veut dans un C2, comment protéger son C2, comment le faire survivre, comment louer son nom de domaine, etc.
+
+On parlera rapidement d'obfs3 et d'obfs2 et leur usage dans Tor.
 
 ## Conclusion:
 
