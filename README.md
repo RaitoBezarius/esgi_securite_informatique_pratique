@@ -28,17 +28,59 @@ Si vous voulez contribuer à ce référentiel, cela sera avec plaisir :).
 
 ## Fuzzing
 
-- Faire un fuzzer du protocole IMAP/POP3 ou fuzzer le protocole avec un truc comme AFL, honggfuzz, Peach Fuzzer, etc.
+- Faire un fuzzer du protocole IMAP/POP3 ou fuzzer le protocole avec un truc comme AFL, honggfuzz, Peach Fuzzer, etc ;
+- Faire du fuzzing "structure-aware" avec https://github.com/google/fuzzing/blob/master/docs/structure-aware-fuzzing.md par exemple ;
+- Tirer une base de données des crashs en scrapant les workers d'OSS Fuzz: https://github.com/google/oss-fuzz (pour trouver des 0days avant tout le monde)
+- Fuzzer les implémentations de JSON Web Tokens (JWT) à la recherche d'un nouveau Heartbleed :-)
+- Fuzzer le protocole de Discord (surtout côté appels) à la recherche de bug ou de 0days :-).
+- Fuzzer CS:GO pour trouver des 0days: oui, y a des gens qui font ça https://blog.firosolutions.com/exploits/counter-strike-go/ (remplacez CS:GO par votre jeu préféré et ça marche aussi.)
 
 ## OSINT
 
 - Un bot qui cherche des informations sur nous et nous alerte sur des leak potentiels de notre vie privée (cherchez sur Twitter pour des mots clefs personnels, scrapper Google, utiliser theHarvester mais dans l'autre sens)
+- Un bot Discord qui rejoint autant de serveurs que possible pour fabriquer un mapping entre les pseudos et les serveurs et surveiller discrètement une/des cibles sur plein de serveurs.
 
 ## Réseau
 
 - Fabriquer un outil pour déployer un VPN avec redirection de traffic vers un bridge qui fait tourner un `tcpdump` pour stocker les trames (à utiliser avec `mitmproxy` et WireGuard) automatiquement.
 - Module Python pour pouvoir lancer plusieurs requêtes parallèles avec plusieurs circuits Tor (pensez `multitor` dans Python automatisé).
 - Module Python pour ne communiquer qu'en IPv6 (pensez évasion d'IDS/IPS débiles)
+- Utiliser la sortie de nmap pour faire du reporting et de l'analyse avancée, style https://github.com/SabyasachiRana/WebMap
+- Utiliser eBPF pour faire de la sécurité avancée dans un contexte Kubernetes/Docker: https://github.com/cilium/cilium
+- Utiliser https://github.com/swisskyrepo/PayloadsAllTheThings pour écrire un testeur de quelque chose (XSS, OAuth, SAML, race conditions, etc.)
+- Écrire un testeur de timing attacks avancé
+
+## Dissection
+
+Dissecter des protocoles propriétaires:
+
+- Appels/Messages WhatsApp
+- Appels/Messages Messenger
+- Snapchat
+- Apps d'achat dans les (super)marchés: Casino Max (€€€), Carrefour, whatever
+- Startups à la con qui font du B2C sur Paris (Uber, AirBnb, Deliveroo, Franprix, G7, Doctolib, Affluences, Amazon Shopping)
+- Apps de miles des compagnies aériennes: Air France, etc.
+
+## Mobile
+
+- Chasser des 0days dans des applications bancaires ou vraiment ce que vous voulez
+- Fabriquer un malware Android user-space
+- (plus dur) Fabriquer un malware Android au niveau kernel (vous allez avoir besoin de beaucoup de ressources / temps et de patience!)
+
+## Système
+
+- Écrire un rootkit kernel pour Windows
+- Écrire un rootkit kernel pour Linux
+- Écrire des modules Apache backdoor (vous droppez une DLL/une lib dans les modules Apache, puis vous l'activez et ça vous permet d'avoir tjrs un accès SSH détourné, indétectable tant qu'on audite pas ses modules, qui fait ça d'ailleurs ?)
+- Écrire des modules PHP backdoor
+- Écrire des modules Python backdoor
+- Écrire un outil pour automatiquement backdoorer une codebase discrètement (JavaScript, PHP, Python, ce que vous voulez)
+- Écrire un outil pour backdoorer un serveur web pour envoyer le traffic TLS vers un autre serveur, discretos bien sûr
+
+## Outillage
+
+- Écrire un daemon de logging avec une belle interface web sans avoir à utiliser toute la stack ELK (un truc plus léger)
+- Bot Twitter qui détecte les trends en infosec et vous envoie un email ou whatever.
 
 # Machines virtuelles
 
@@ -197,3 +239,33 @@ On va utiliser ce qu'on a vu juste avant afin de détecter du shellcode, à coup
 ## Comment on dissecte du malware? Émulation? Virtualisation? Reverse engineering?
 
 On va voir sur un vrai malware quelques réflexes de ce qu'il faut faire et ce qu'il ne faut pas faire.
+
+# Final cours: cours du vendredi
+
+## Python: Promo du matin (~ 1h)
+
+On essaye d'écrire un malware entier, on discutera `ctypes`, API Windows, détection de malwares Python par les anti-virus, évasion d'antivirus.
+
+## Python: Promo de l'après midi
+
+On passe 30 minutes à regarder ce que vous avez essayé de faire en Python ; et après on passe aux malwares!
+
+## Stéganographie, micro-kernels, manipulateur de CRC & quine: démonstrations & quelques ProTips
+
+- On va regarder le principe de la stégano, pourquoi ça reste d'intérêt aujourd'hui ?
+- On va parler des micro-noyaux, qu'est ce que c'est, pourquoi ça vaut le coup de regarder ça aujourd'hui ?
+- Manipuler des checksums CRC pour pouvoir obtenir ceux qu'on veut.
+- On va discuter des fichiers qui sont à la fois des ZIP, des RAR, des PDF et à peu près tout et n'importe quoi.
+
+## Protocoles anti-censure/anti-DPI (notamment `obfsproxy`) & Command'n'Control modernes
+
+À venir.
+
+## Conclusion:
+
+- On reviendra sur des points qu'on aura abordé selon la promo (OSINT, réseaux de neurones, etc.)
+- On ouvrira sur des références bibliographiques que vous pouvez vous approprier pour aller plus loin.
+- On discutera du projet, je vous donnerai les indications finales relatives à son déroulement (taille de groupe, comment communiquer, mes attentes pour la soutenance.)
+
+
+On effectuera le QCM à la fin qui sera un PDF sur le repo disponible avant la fin du cours.
