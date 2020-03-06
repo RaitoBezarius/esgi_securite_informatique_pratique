@@ -15,6 +15,8 @@ Si vous voulez contribuer à ce référentiel, cela sera avec plaisir :).
 
 # Éléments de références bibliographiques pour aller plus loin
 
+- Cours de RE bien stylé: <https://class.malware.re/> (!!!)
+- Android pour iPhone: <https://projectsandcastle.org/>
 - https://github.com/topics/security
 - https://github.com/xairy/linux-kernel-exploitation pour le noyau Linux
 - https://github.com/trimstray/the-book-of-secret-knowledge pour une liste assez complète de tout ce qui traîne
@@ -23,6 +25,7 @@ Si vous voulez contribuer à ce référentiel, cela sera avec plaisir :).
 - https://www.alchemistowl.org/pocorgtfo/ - PoC||GTFO, une e-zine de sécurité assez bien foutue
 - https://ired.team/ — pour aller plus loin en tant que red teamer, quelques protips
 - https://docs.google.com/spreadsheets/d/1b4mUxa6cDQuTV2BPC6aA-GR4zGZi0ooPYtBe4IgPsSc/edit#gid=0 — la C2 Matrix
+- 
 
 # Idées de projets (annuels peut-être?)
 
@@ -109,6 +112,14 @@ La « Machine trouée »: <https://www.vulnhub.com/entry/bwapp-bee-box-v16,53/> 
 
 # News du monde de la sécurité informatique / Veille active
 
+**NEW** :
+- Mars 2020: <https://blog.cryptographyengineering.com/2020/03/06/earn-it-is-an-attack-on-encryption/> — nouvelle loi anti crypto dans les cartons aux USA
+- Mars 2020: <https://duo.com/blog/the-beer-drinkers-guide-to-saml> — SAML, le nouveau truc à péter
+- Mars 2020: <http://blog.ptsecurity.com/2020/03/intelx86-root-of-trust-loss-of-trust.html> — peut-être, adieu Intel Management Engine?
+- Mars 2020: <https://pythonspeed.com/articles/dont-need-kubernetes/> — pourquoi il faut ne pas utiliser Kubernetes?
+- Mars 2020: Hacker News qui kiffe `nfstream`: <https://news.ycombinator.com/item?id=22488470>
+
+**OLD** :
 - Scraper sa banque: <https://weboob.org/applications/boobank>
 - Dédicace au garçon qui a trop d'ESP32 chez lui: <https://www.thirtythreeforty.net/posts/2019/12/my-business-card-runs-linux/>
 - Comment générer des nombres aléatoires correctement: <https://sockpuppet.org/blog/2014/02/25/safely-generate-random-numbers/> ?
